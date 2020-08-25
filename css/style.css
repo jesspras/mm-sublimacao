@@ -1,0 +1,328 @@
+/**Menu**/
+.menu
+{
+    background: #006C90;
+    padding:20px 0; /*cima baixo direita esquerda*/
+
+}
+.menu-container
+{
+    /*Centralizar*/
+    max-width: 960px;
+   /* margin-left: auto;
+    margin-right: auto;
+    margin: 100px auto 200px auto; cima direita baixo esquerda
+    */
+    margin: 0 auto;
+}
+.menu-container:after, .menu-container:before{
+    content: "";/*sempre em after e before*/
+    display:table;
+    clear:both;
+}
+a.menu-logo{
+    display: block; /*um elemento que ocupa 100% da linha do site, quando usado com float ocupa só o tamanho 
+    total do seu proprio conteudo*/
+    float: left; /*perdmite que os elementos flutuem do lado*/
+    margin-left: 10px;
+}
+a.menu-logo img{
+    width: 100px;
+    
+}
+.menu-nav{
+    float: right;
+    margin-right: 10px;
+    display: block;
+}
+.menu-nav li{
+    display: inline-block;
+}
+.menu-nav a{
+   
+    display: block;
+    padding: 10px; /*area de contato maior para touchscreen*/
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;/*18px/16px padrao = 1,125*/
+}
+/*dois elementos flutuando (logo e menu) a div n consegue pegar o tamanho total. Limpar o float da div*/
+
+/*INTRO*/
+.intro{
+    width: 100%;
+	height: 380px;
+	background: url("../img/avengers2.png") no-repeat center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 80px;
+}
+.intro h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 92px;
+    font-size: 3em;
+    color: #fff;
+}
+
+.btn {
+	border: 4px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+    letter-spacing: .1em;
+    display: inline-block;
+    margin-bottom:20px
+    
+}
+.btn:hover {
+    color: #8080ff;
+    border-color: #8080ff;
+}
+
+/*Produtos*/
+.subtitulo{
+    color:  #006C90;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 1,5em;
+    text-align: center;
+}
+.subtitulo::after{
+    content: "";
+    background:  #006C90;
+    width: 40px;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+.btn-azul{
+    border: 4px solid #006C90;
+	padding: 10px 30px;
+	color: #006C90;
+}
+.call{
+    margin-top: 20px;
+    color: #006C90;
+    text-align: center;
+}
+
+/*PORTFOLIO*/
+.portfolio{
+    background-color: #006C90;
+}
+.portfolio_icone img
+{
+    width: 300px;
+    height: 300px;
+   
+}
+.portfolio_lista{
+   text-align: center;
+   
+}   
+.portfolio_icone_ultimo img{
+    width: 668px;
+    height: 250px;
+}
+.portfolio_lista li{
+    display: inline-block;
+    padding:20px;
+    margin: 0 auto;
+   
+    margin-left: 20px;
+    margin-top: 20px;
+   
+}
+
+
+.btn-azul{
+    border: 4px solid #006C90;
+	padding: 10px 30px;
+    color: #006C90;
+    margin-top: 20px;
+}
+
+.call_portfolio{
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+.subtitulo-portfolio{
+    color: #fff;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 1,5em;
+    text-align: center;
+    padding-top: 20px;
+}
+.subtitulo-portfolio::after{
+    content: "";
+    background:  #fff;
+    width: 40px;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+}
+.btn-branco{
+    border: 4px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+}
+/*Produtos*/
+.produtos_container
+{
+    width: 960px;  
+    margin: 0 119px;
+}
+.produtos_container:after, .produtos_container:before{
+    content: "";/*sempre em after e before*/
+    display:table;
+    clear:both;
+}
+.produtos_icone{
+    width: 150px;
+    float: left;
+    margin: 0 50px;
+}
+.produtos_icone img{
+    width: 150px;
+    max-width: 100%;
+    margin: 30px;
+}
+.produtos_icone h3{
+    font-size: 1.125em;
+    background: #00004d;
+    color: #fff;
+    width: 220px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1em;
+    padding: 5px 0 10px 0;  
+    top: -25px;
+    position: relative; 
+}
+
+/*Qualidade*/
+
+.qual {
+    padding: 60px 427px;
+    display: block;
+    font-size: 3em;
+    color: #006C90;
+    font-weight: bold;
+}
+
+.qualidade:after {
+	content: "";
+	width: 630px;
+	height: 90px;
+	display: block;
+	background: url("../img/linhas.svg") no-repeat center;
+	position: absolute;
+	top: 150px;
+	right: 150px;
+	z-index: -1;
+}
+
+.qualidade img{
+    margin: 15px 445px;
+}
+
+.qualidade_lista {
+
+	overflow: auto; /* clear-fix */
+}
+
+.qualidade_lista li {
+	text-align: center;
+    padding: 0 40px;
+    list-style: none;
+    color: #006C90;
+}
+.qualidade_lista li h3 {
+	font-weight: bold;
+}
+
+.qualidade_lista li h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-top: 20px;
+}
+
+.qualidade_lista li h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #006C90;
+	margin: 6px auto;
+}
+.footer {
+	width: 100%;
+	background: #006C90;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.footer h3 {
+	font-size: 18px;
+	line-height: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: bold;
+}
+
+.footer h3:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+	padding-right: 40px;
+}
+
+.footer_contato ul li {
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.footer_redes ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer_redes ul li a {
+	border: 3px solid #fff;
+	display: block;
+	padding: 10px;
+}
+
+.footer_redes ul li a:hover {
+	border-color: #8080ff;
+}
+
+.copy {
+	width: 100%;
+	background: #00004d;
+    padding: 20px 0;
+    color: #fff;
+}
+
+
